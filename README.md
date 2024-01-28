@@ -1,7 +1,9 @@
 # product-qrcode
 qrcode generator for products with dynamic content.
 
-## Preparation
+## V1
+
+### Preparation
 
 Prepare a list of txt files which need to generated as qrcode with name format `{index}_{count}.txt`.
 
@@ -11,7 +13,7 @@ Prepare a list of txt files which need to generated as qrcode with name format `
 ```
 
 
-## Execution
+### Execution
 
 Run below command with python3.
 
@@ -19,7 +21,7 @@ Run below command with python3.
 python qrcode.py
 ```
 
-## Result
+### Result
 
 1. A base directory will be created with name pattrn `{date}_{time}`.
 2. A sub directory with source file name under base directory.
@@ -33,3 +35,16 @@ python qrcode.py
         ...
     |--qrcode{index}.pdf
 ```
+
+
+## V2
+
+Run below command with python3.
+
+```
+python qrcodeui.py
+```
+
+Just copy the content into the text edit in the UX tool and click generate. The generated pdf file is at the current directory.
+
+![qrcode ui](./image/qrcodeui.png)
